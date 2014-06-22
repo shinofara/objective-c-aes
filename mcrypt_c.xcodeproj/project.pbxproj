@@ -14,6 +14,8 @@
 		4FA8975819558E8700AE7C67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FA8975619558E8700AE7C67 /* Main.storyboard */; };
 		4FA8975A19558E8700AE7C67 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FA8975919558E8700AE7C67 /* Images.xcassets */; };
 		4FA8976619558E8700AE7C67 /* mcrypt_cTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FA8976519558E8700AE7C67 /* mcrypt_cTests.m */; };
+		4FA8977119558EC200AE7C67 /* NSDataEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FA8977019558EC200AE7C67 /* NSDataEx.m */; };
+		4FA897741955914E00AE7C67 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FA897731955914E00AE7C67 /* Base64.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		4FA8975F19558E8700AE7C67 /* mcrypt_cTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mcrypt_cTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FA8976419558E8700AE7C67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4FA8976519558E8700AE7C67 /* mcrypt_cTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mcrypt_cTests.m; sourceTree = "<group>"; };
+		4FA8976F19558EA400AE7C67 /* NSDataEx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSDataEx.h; sourceTree = "<group>"; };
+		4FA8977019558EC200AE7C67 /* NSDataEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataEx.m; sourceTree = "<group>"; };
+		4FA897721955913300AE7C67 /* Base64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
+		4FA897731955914E00AE7C67 /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +95,10 @@
 				4FA8975919558E8700AE7C67 /* Images.xcassets */,
 				4FA8975019558E8700AE7C67 /* mcrypt_c.xcdatamodeld */,
 				4FA8974919558E8700AE7C67 /* Supporting Files */,
+				4FA8976F19558EA400AE7C67 /* NSDataEx.h */,
+				4FA8977019558EC200AE7C67 /* NSDataEx.m */,
+				4FA897721955913300AE7C67 /* Base64.h */,
+				4FA897731955914E00AE7C67 /* Base64.m */,
 			);
 			path = mcrypt_c;
 			sourceTree = "<group>";
@@ -219,8 +229,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FA8974F19558E8700AE7C67 /* AppDelegate.m in Sources */,
+				4FA8977119558EC200AE7C67 /* NSDataEx.m in Sources */,
 				4FA8975219558E8700AE7C67 /* mcrypt_c.xcdatamodeld in Sources */,
 				4FA8975519558E8700AE7C67 /* ViewController.m in Sources */,
+				4FA897741955914E00AE7C67 /* Base64.m in Sources */,
 				4FA8974C19558E8700AE7C67 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

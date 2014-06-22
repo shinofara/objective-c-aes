@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "NSDataEx.h"
 
 @interface ViewController ()
             
@@ -18,6 +19,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    NSString *key = @"d41d8cd98f00b204e9800998ecf8427e";
+    NSString *plaintext = @"iphone";
+    
+    NSString *cipher = [plaintext AES256EncryptWithKey: key];
+    NSLog(@"encode: %@", cipher);
+    NSString *dec = [cipher AES256DecryptWithKey: key];
+    NSLog(@"encode: %@", dec);
 }
 
 - (void)didReceiveMemoryWarning {
