@@ -1,11 +1,3 @@
-//
-//  NSDataAdditions.m
-//  CryptTest
-//
-//  Created by sora on 12/5/10.
-//  Copyright 2010 __MyCompanyName__. All rights reserved.
-//
-
 #import "NSDataEx.h"
 #import <CommonCrypto/CommonCryptor.h>
 #import "Base64.h"
