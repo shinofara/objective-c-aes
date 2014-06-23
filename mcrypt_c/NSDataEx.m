@@ -2,8 +2,6 @@
 #import <CommonCrypto/CommonCryptor.h>
 #import "Base64.h"
 
-
-
 @implementation NSString (Additions)
 
 @class NSString;
@@ -50,11 +48,7 @@
 }
 
 - (NSString *)AES256DecryptWithKey:(NSString *)key {
-    
-    // base64をデコード
     NSData *decodedData = [NSData dataWithBase64EncodedString:self];
-    //NSLog(@"base64 decoded=%@",[decodedData description]);
-    
     
     char keyPtr[kCCKeySizeAES256+1];
     bzero(keyPtr, sizeof(keyPtr));
@@ -68,8 +62,7 @@
     void *buffer = malloc(bufferSize);
     
     size_t numBytesDecrypted = 0;
-    //	CCCryptorStatus cryptStatus = CCCrypt(kCCDecrypt, kCCAlgorithmAES128,kCCOptionPKCS7Padding | kCCOptionECBMode,
-    CCCryptorStatus cryptStatus = CCCrypt(kCCDecrypt, kCCAlgorithmAES128,kCCOptionPKCS7Padding,
+    CCCryptorStatus cryptStatus = CCCrypt(kCCDecrypt, kCCAlgorithmAES128,kCCOptionPKCS7Padding | kCCOptionECBMode,
                                           keyPtr, kCCKeySizeAES256,
                                           NULL,
                                           [decodedData bytes], dataLength,
